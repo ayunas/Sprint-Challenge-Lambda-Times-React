@@ -5,8 +5,6 @@ import styled from 'styled-components';
 // You can find the corresponding CSS in the CSS/index.css file
 
 
-
-
 const TopBar = () => {
   return (
     <div className="top-bar">

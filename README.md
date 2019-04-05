@@ -29,9 +29,19 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+    PropTypes are a type of filter on the properties passed down from parent to child components.  It allows react to throw an error if the wrong type of property is passed down.
+
 - [ ] Describe a life-cycle event in React?
+    Because React Components can be added and removed from the DOM and are not permanent elements in the DOM, they have a lifecycle.  The three phases in the lifecycle of a react component are Mounting / Updating / Unmounting.  There are different methods built into React that can be utilized to perform different functions.  For example, ComponentDidMount() is a lifecycle method that is executed immediately after the Render() is executed.  It is a lifecycle method that is part of the Mounting phase.  Data is loaded from an API using this method, because we want the page to have rendered components before loading the actual data.
+
+
 - [ ] Explain the details of a Higher Order Component?
+    A Higher Order component, or HOC, is simply a function that accepts as parameters React Components, and returns another component that enhances the component passed into it.  It is used to add additional features to an existing component.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+    1. CSS - you can create css files for each component, and simply import the file in the JS component file.
+    2. SCSS, a built in Preprocessor in the React Framework, allows you to perform more sophisticated and elegant css, with nesting CSS selectors, variables, mixins, etc.
+    3. Styled Components - using the styled-components library, you can create custom React components that are styling existing html elements.
 
 ## Project Setup
 

@@ -29,7 +29,6 @@ export default class Content extends Component {
 
   changeSelected = tab => {
     console.log('tab clicked');
-    console.log(tab);
     this.setState( {
       selected : tab
     })
@@ -53,7 +52,6 @@ export default class Content extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="content-container">
         {/* 

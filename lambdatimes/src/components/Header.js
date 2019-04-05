@@ -28,11 +28,20 @@ const Tempy = styled.span`
   flex: 1;
 `;
 
+const Times = styled.h1`
+  font-size: 60px;
+  font-family: Didot, serif;
+  font-weight: bold;
+  flex: 8;
+  text-align: center;
+  color: #000;
+`;
+
 const Header = () => {
   return (
     <Divvy className="header">
       <Daty className="date">SMARCH 32, 2018</Daty>
-      <h1>Lambda Times</h1>
+      <Times>Lambda Times</Times>
       <Tempy className="temp">98°</Tempy>
     </Divvy>
   )

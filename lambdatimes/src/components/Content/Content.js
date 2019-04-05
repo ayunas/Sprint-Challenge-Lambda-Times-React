@@ -53,16 +53,12 @@ export default class Content extends Component {
     // } else {
     //   return (tab === this.state.selected && this.state.cards)
     // }
-    console.log(this.state);
     if (this.state.selected === 'all') {
       return this.state.cards;
     } else {
       //return cards that have a tab = 'selected'
       return this.state.cards.filter( card => card.tab === this.state.selected)
     }
-
-    
-
   };
 
   render() {
